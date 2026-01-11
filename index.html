@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Análise de Desempenho</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard de Análise de Desempenho</h1>
+    </header>
+
+    <main>
+        <section id="graficos">
+            <h2>Gráficos de Desempenho</h2>
+            <canvas id="grafico-desempenho"></canvas>
+        </section>
+        <section id="tabelas">
+            <h2>Tabelas de Dados</h2>
+            <table id="tabela-dados">
+            <thead>
+                <tr> 
+                    <th>Coluna 1</th> 
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-dados-corpo"></tbody>
+            </table>
+        </section>
+        <section id="mapas">
+            <h2>Mapas de Localização</h2>
+            <div id="mapa-localizacao" style="height: 400px;"></div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</body>
+</html>
