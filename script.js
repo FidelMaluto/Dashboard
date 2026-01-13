@@ -24,17 +24,17 @@ const chart = new Chart(graficoDesempenho, {
 // Tabela de Dados
 const tabelaDadosCorpo = document.getElementById('tabela-dados-corpo');
 const dados = [
-    { coluna1: 'Dado 1', coluna2: 'Dado 2', coluna3: 'Dado 3' },
-    { coluna1: 'Dado 4', coluna2: 'Dado 5', coluna3: 'Dado 6' },
-    { coluna1: 'Dado 7', coluna2: 'Dado 8', coluna3: 'Dado 9' }
+    { Nome: 'Fidel', Sobrenome: 'Maluto', Stack: 'HTML' },
+    { Nome: 'Deby', Sobrenome: 'FIdel', Stack: 'CSS' },
+    { Nome: 'Fidel', Sobrenome: 'Domingos', Stack: 'JavaScript' }
 ];
 
 dados.forEach(dado => {
     const linha = document.createElement('tr');
     linha.innerHTML = `
-    <td>${dado.coluna1}</td>
-    <td>${dado.coluna2}</td> 
-    <td>${dado.coluna3}</td>
+    <td>${dado.Nome}</td>
+    <td>${dado.Sobrenome}</td> 
+    <td>${dado.Stack}</td>
     `;
 
     tabelaDadosCorpo.appendChild(linha);
